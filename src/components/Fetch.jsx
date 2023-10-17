@@ -60,8 +60,8 @@ const Fetch = ({ data }) => {
 
   return (
     <div className="container max-w-5xl mx-auto px-4">
-        <div className="heading my-4 rounded-full  md:p-4 flex flex-col gap-2">
-            <h1 className="font-lexend text-base md:text-lg ">HaYTranslate</h1>
+        <div className="heading my-4 mt-8 rounded-full  md:p-4 flex flex-col gap-3">
+            <h1 className="font-lexend text-lg md:text-lg ">HaYTranslate</h1>
             <p className="text-sm font-lexend">Effortlessly translate text into over 100 languages</p>
         </div>
       <div className="flex items-center gap-3 justify-between w-full flex-wrap my-4 ">
@@ -82,9 +82,7 @@ const Fetch = ({ data }) => {
             })}
           </select>
         </div>
-        <div>
-          <BiTransfer />
-        </div>
+       
         <div className="custom-select">
           <select name="" id="" onChange={handleTargetLanguage} className="p-2">
             <option value="fr">French</option>
