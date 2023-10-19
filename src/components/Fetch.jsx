@@ -11,7 +11,7 @@ const Fetch = ({ data }) => {
     method: "POST",
     headers: {
       "content-type": "application/x-www-form-urlencoded",
-      "X-RapidAPI-Key": "77f4a7463bmshb6f8b18e04e62bbp1f587ejsn8aefab0cbc40",
+      "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY_,
       "X-RapidAPI-Host": "text-translator2.p.rapidapi.com",
     },
     body: new URLSearchParams({
@@ -57,6 +57,7 @@ const Fetch = ({ data }) => {
       console.error("Failed to copy to clipboard: ", err);
     }
   };
+
 
   return (
     <div className="container max-w-5xl mx-auto px-4">

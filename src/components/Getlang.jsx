@@ -4,7 +4,7 @@ const url = "https://text-translator2.p.rapidapi.com/getLanguages";
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "77f4a7463bmshb6f8b18e04e62bbp1f587ejsn8aefab0cbc40",
+    "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY_,
     "X-RapidAPI-Host": "text-translator2.p.rapidapi.com",
   },
 };
